@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(146, 179, 208);
+    color: rgb(99, 101, 104);
+    height: 5vh;
+    font-size: 2rem;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+.gamecontainer{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 15vh);
+    grid-template-columns: repeat(3, 13vw);
+    position: relative;
+
+}
+
+.box{
+    border: 3px solid black;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: aliceblue;
+}
+.infocontainer{
+    padding: 0 50px;
+}
+
+.bt0{
+    border-top: 0;
+}
+.bb0{
+    border-bottom: 0;
+}
+.bl0{
+    border-left: 0;
+}
+.br0{
+    border-right: 0;
+}
+
+.img img{
+    width: 30vw;
+    transition: width 1sec ease-in-out;
+     
+}
+
+#button{
+    background-color: rgb(188, 238, 238);
+    padding: 10px;
+    cursor: pointer;
+}
+.line{
+    background-color: rgb(202, 77, 98);
+    height: 5px;
+    width: 0vw;
+    position: absolute;
+    /* transform: translate(9.5vw, 10.5vw) rotate(30deg) */
+    transition: width 1s ease-in-out;
+    
+}
+
+@media screen and (max-width: 950px)
+{
+.gamecontainer{
+    flex-wrap: wrap;
+}
+
+.infocontainer h1{
+    font-size: 1.8rem;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 20vh);
+    grid-template-columns: repeat(3, 20vw);
+    position: relative;
+
+}
+}
